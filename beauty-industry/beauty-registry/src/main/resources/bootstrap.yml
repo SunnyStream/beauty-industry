@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: registry-server
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+
+logging:
+  level:
+    org.springframework.boot: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.http.server.reactive: DEBUG
+    org.springframework.web.reactive: DEBUG
+    reactor.ipc.netty: DEBUG

@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>用户列表</title>
+</head>
+<body>
+<p>用户列表:
+<table>
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+  	<#list userList as user>
+  		<tr>
+            <td>${user.id}</td>
+            <td>${user.name}</td>
+            <td>${user.age}</td>
+        </tr>
+    </#list>
+</table>
+</body>
+</html>
